@@ -1,0 +1,18 @@
+#login.modal.fade(tabindex='-1')
+	.modal-dialog.w-590
+		.modal-header
+			h3.title-form Авторизуйтесь
+		.modal-body.text-center
+			form(role='form').modal-form
+				.col-lg-8.col-lg-offset-2
+					.form-group
+						label.label-form(for='nameLogin') Логин:
+						input.field-form.form-control#nameLogin(type="text")
+				.col-lg-8.col-lg-offset-2
+					.form-group
+						label.label-form(for='password') Пароль:
+						input.field-form.form-control#password(type='password')
+				.col-lg-12
+					.form-group
+						button.btn-form Войти
+

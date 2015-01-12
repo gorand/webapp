@@ -1,0 +1,22 @@
+include includes/variables
+doctype html
+html
+	include includes/head
+	body
+		.main
+			//- header
+			include includes/header
+			//- content
+			.container.wrapper
+				.row
+					.col-md-3.col-md-offset-1
+						include includes/sidebar  
+					.col-md-7
+						h1 Авторизация
+						a(id="linkModal" title="" href="#login"  data-toggle="modal" data-target="#login") Модальное окно
+		//- footer
+		include includes/footer
+		//- modal window
+		include includes/modal_login
+		//- scripts
+		include includes/scripts

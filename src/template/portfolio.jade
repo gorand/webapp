@@ -1,0 +1,25 @@
+include includes/variables
+doctype html
+html
+	include includes/head
+	body
+		.main
+			//- header
+			include includes/header
+			//- content
+			.container.wrapper
+				.row
+					.col-md-3.col-md-offset-1
+						include includes/sidebar  
+					.col-md-7
+						//- content portfolio
+						include includes/portfolio_content
+		//- footer
+		include includes/footer
+		//- Модальное окно 
+		include includes/modal_login
+		//- Подключение основных скриптов
+		include includes/scripts
+		script.
+			(function() {
+			})();

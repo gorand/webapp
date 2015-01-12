@@ -1,0 +1,28 @@
+//footer
+.footer{
+	color:#4a545d;
+	height:80px;
+	position: relative;
+	padding: 0;
+	z-index:1;
+	font: 13px/20px Arial, Helvetica, sans-serif;
+    background-color: #eff3f7;
+    &:before{
+    	content: "";
+    	@extend %gradient-line;
+    }
+
+	*{
+		@include box-sizing(border-box);
+	}
+	@media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+		height: auto;
+		border-bottom:none;
+		text-align: center;
+	}
+	.footer-info{
+		margin: 30px 0 0;
+		text-align: center;
+	}
+
+}

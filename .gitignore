@@ -2,6 +2,7 @@
 ############
 -workfiles
 node_modules
+bower_components
 
 # Packages #
 ############

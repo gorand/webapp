@@ -8,7 +8,6 @@ a{
 	  border-bottom: none;
 	}
 	  &:focus {
-	    @include tab-focus();
 	}
 }
 a.active{

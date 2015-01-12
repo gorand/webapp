@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Портфолио фронтенд разработчика</title>
+    <meta name="description" content="Проект сайта-портфолио в виде домашнего задания от Loftschool">
+    <meta name="keywords" content="портфолио, верстка, фронтенд">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr.custom.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    -->
+  </head>
+  <body>
+    <div class="main">
+      <div class="container-fluid head">
+        <header class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="head-logo">
+                <div class="logo"><a href="/" title="Frontend Development"><img alt="Gordeev Andrey" title="Frontend Development" src="img/logo.png" width="258" height="68"></a></div>
+              </div>
+            </div>
+            <div class="col-md-4 pull-right">
+              <div class="head-soc">
+                <ul class="soc-wrap">
+                  <li class="soc-item"><a href="http://vk.com/gorandnik" target="_blank" class="soc-link"><span class="soc-icon fa fa-vk"></span></a></li>
+                  <li class="soc-item"><a href="https://www.facebook.com/gorandnik" target="_blank" class="soc-link"><span class="soc-icon fa fa-facebook"></span></a></li>
+                  <li class="soc-item"><a href="https://twitter.com/gorandnik" target="_blank" class="soc-link"><span class="soc-icon fa fa-twitter"></span></a></li>
+                  <li class="soc-item"><a href="https://github.com/gorand" target="_blank" class="soc-link"><span class="soc-icon fa fa-github"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <div role="navigation" class="sidebar">
+              <nav class="menu-wrap">
+                <ul class="menu-list">
+                  <li class="menu-item active"><a href="index.html" title="Обо мне" class="menu-link">Обо мне</a></li>
+                  <li class="menu-item"><a href="portfolio.html" title="Мои работы" class="menu-link">Мои работы</a></li>
+                  <li class="menu-item"><a href="feedback.html" title="Связаться со мной" class="menu-link">Связаться со мной</a></li>
+                  <li class="menu-item"></li>
+                </ul>
+              </nav>
+              <div class="contact-wrap"> 
+                <h2 class="contact-title">Контакты</h2>
+                <ul class="contact-list">
+                  <li class="contact-item bg-blue-1"> <span class="fa fa-envelope-o"></span>gorandnik@inbox.ru</li>
+                  <li class="contact-item bg-blue-2"> <span class="fa fa-phone"></span>+7 (923) 289-76-91</li>
+                  <li class="contact-item bg-blue-3"> <span class="fa fa-skype"></span>gorandnik</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <section class="form-content">
+              <header class="header-form">
+                <h1 class="title-form">У вас интересный проект? Напишите мне</h1>
+              </header>
+              <form role="form" class="form-feedback">
+                <div class="col-lg-4 col-lg-offset-2">
+                  <div class="form-group">
+                    <label for="nameLogin">Имя:</label>
+                    <input id="nameLogin" type="text" placeholder="Как к Вам обращаться" class="field-form form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input id="Email" type="email" placeholder="Куда мне писать" class="field-form form-control">
+                  </div>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="form-group">
+                    <label for="Messege">Сообщение</label>
+                    <textarea id="Message" rows="10" class="field-form form-conrtol">Кратко в чем суть </textarea>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                  <label for="Captcha">Введите код, указанный на картинке</label>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                  <div class="captcha form-group"><img src="media/captcha.png" alt="captcha"></div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-verticalmiddle">
+                    <input id="Captcha" type="text" placeholder="Введите код" class="field-form form-control">
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-5 col-lg-offset-2">
+                  <div class="form-group">
+                    <button class="btn-form">Отправить</button>
+                  </div>
+                </div>
+                <div class="col-lg-3 text-right">
+                  <div class="form-group">
+                    <button class="btn-gray">Очистить</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer">
+      <footer role="contentinfo">
+        <div class="row text-center">
+          <p class="footer-info">&copy; 2014 Gordeev Andrey - Это мой сайт, пожалуйста, не копируйте и не воруйте его  </p>
+        </div>
+      </footer>
+    </div>
+    <div id="login" tabindex="-1" class="modal fade">
+      <div class="modal-dialog w-590">
+        <div class="modal-header">
+          <h3 class="title-form">Авторизуйтесь</h3>
+        </div>
+        <div class="modal-body text-center">
+          <form role="form" class="modal-form">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="form-group">
+                <label for="nameLogin" class="label-form">Логин:</label>
+                <input id="nameLogin" type="text" class="field-form form-control">
+              </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="form-group">
+                <label for="password" class="label-form">Пароль:</label>
+                <input id="password" type="password" class="field-form form-control">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <button class="btn-form">Войти</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\\/script>')</script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor/twbs/transition.js"></script>
+    <script src="js/vendor/twbs/modal.js"></script>
+    <script>
+      (function() {
+      })();
+    </script>
+  </body>
+</html>

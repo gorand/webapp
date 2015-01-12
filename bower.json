@@ -1,0 +1,20 @@
+{
+  "name": "simple app",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gorand/webapp",
+  "authors": [
+    "Gordeev"
+  ],
+  "description": "layots for simple application",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.3"
+  }
+}

@@ -1,48 +1,26 @@
 
-// bootstrap style
-@import "twbs/normalize";
-@import "twbs/variables";
-@import "twbs/mixins";						
-@import "twbs/grid";
-@import "twbs/scaffolding";
-@import "twbs/forms";
-@import "twbs/modals";
-//@import "twbs/utilities";
-//@import "twbs/responsive-utilities";
 
 
 // variables and project mixins
 @import "config";
 
 // include fonts
-@import "fonts";
+@import "common/fonts";
+@import "common/icons";
+@import "common/links";
+@import "common/typography";
 
 // specific project styles
 @import "layouts/general";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/sidebar";
-@import "layouts/portfolio";
-@import "layouts/feedback";
 @import "layouts/index";
 @import "layouts/modal";
 
 
-// --- Core --- //
-
-// atoms
-@import "atoms/buttons";
-@import "atoms/proportions";
-@import "atoms/badges";
-@import "atoms/field_forms";
-@import "atoms/symbols";
-
-// molecules
-@import "molecules/forms";
-//@import "molecules/tooltip";
-
-// quarks
-@import "quarks/icons";
-@import "quarks/typography";
-@import "quarks/links";
-
+// components
+@import "components/buttons";
+@import "components/proportions";
+@import "components/badges";
+@import "components/symbols";

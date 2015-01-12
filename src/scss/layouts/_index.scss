@@ -36,7 +36,6 @@
 				.tag-wrap{
 					padding: 6px 0 0;
 					.tag-item{
-						@extend %badge;
 						list-style: none;
 						display: inline-block;
 						float: left;

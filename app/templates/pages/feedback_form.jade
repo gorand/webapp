@@ -1,0 +1,38 @@
+//- feedback form
+extends ./../layout.jade
+
+block page-title 
+	title Форма обратной связи
+
+block content
+	section.form-content
+		header.header-form
+			h1.title-form У вас интересный проект? Напишите мне
+		form.form-feedback(role='form')
+			.col-lg-4.col-lg-offset-2
+				.form-group
+					label(for='nameLogin') Имя:
+					input.field-form.form-control#nameLogin(type='text' placeholder='Как к Вам обращаться')
+			.col-lg-4
+				.form-group
+					label(for='Email') Email:
+					input.field-form.form-control#Email(type='email' placeholder='Куда мне писать')
+			.col-lg-8.col-lg-offset-2
+				.form-group
+					label(for='Messege') Сообщение
+					textarea.field-form.form-conrtol#Message(rows='10') Кратко в чем суть 
+			.col-lg-8.col-lg-offset-2
+				label(for="Captcha") Введите код, указанный на картинке
+			.col-lg-4.col-lg-offset-2
+				.captcha.form-group
+					img(src='media/captcha.png' alt='captcha')
+			.col-lg-4
+				.form-verticalmiddle
+					input.field-form.form-control#Captcha(type='text' placeholder='Введите код')
+			.clearfix
+			.col-lg-5.col-lg-offset-2
+				.form-group
+					button.btn-form Отправить
+			.col-lg-3.text-right
+				.form-group
+					button.btn-gray Очистить

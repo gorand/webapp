@@ -1,0 +1,45 @@
+//header 
+.head{
+	margin: 0 auto;
+    position:relative;
+    z-index: 14;
+    min-height: 119px;
+    background-color: #eff3f7;
+    &:after{
+    	content: "";
+        @extend %gradient-line; 
+    }
+	.head-logo{
+		.logo{
+	        font: 28px/1.35 Helvetica, Arial, Verdana, sans-serif;
+			margin: 26px 0 0;
+		}
+	}
+    .head-soc{
+        .soc-wrap{
+            margin: 35px 0 38px;
+            .soc-item{
+                display: inline-block;
+                margin-left: 22px;
+                .soc-link{
+                    display: block;
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 50%;
+                    background-color: #58697a;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: #3ba8c0;
+                    }
+                    .soc-icon{
+                        font-size: 26px;
+                        line-height: 46px;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }        
+        }
+    }
+}

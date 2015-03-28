@@ -1,0 +1,25 @@
+
+
+
+// variables and project mixins
+@import "config";
+
+// include fonts
+@import "common/fonts";
+@import "common/icons";
+@import "common/links";
+@import "common/typography";
+
+// specific project styles
+@import "layouts/general";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/index";
+@import "layouts/modal";
+
+
+// components
+@import "components/navigation";
+@import "components/buttons";
+@import "components/proportions";
+@import "components/symbols";

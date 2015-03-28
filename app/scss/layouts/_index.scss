@@ -1,0 +1,60 @@
+// main page
+.part-content{
+		@include part-content;
+		padding: 8px 0 18px;
+	.info-inner{
+		padding: 24px 0;
+	}
+	.img-avatar{
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		float: left;
+		margin-left: 40px;
+		border-radius: 50%;
+		border: solid 4px #30a5bd;
+		background: #fff;
+		.avatar{
+		}
+	}
+	.list-content{
+		.list-wrap{
+			margin-left: 272px;
+			padding: 0;
+			font: normal 15px/46px fira_sansbook, Arial, Verdana, Helvetica, sans-serif;
+			color: #37424d;
+			.list-item{
+				list-style: none;
+				.list-prop{
+					float: left;
+					font: 500 16px/46px fira_sansbold, Arial, Verdana, Helvetica, sans-serif;
+					color: #4a545d;
+				}
+				.list-value{
+					margin-left: 10px;
+				}
+				.tag-wrap{
+					padding: 6px 0 0;
+					.tag-item{
+						list-style: none;
+						display: inline-block;
+						float: left;
+						margin: 6px 4px 0 0;
+						&:first-child{
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	.simple-list{
+		.badge-title{
+			margin-left: 60px;
+		}
+		.badge-text{
+			margin-left: 60px;
+			font: normal 15px/18px fira_sanslight, Arial, Verdana, Helvetica, sans-serif;
+		}
+	}
+}

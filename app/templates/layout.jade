@@ -1,7 +1,10 @@
 //- layout.jade
 include helpers/variables
+include helpers/mixins
 doctype html
 html
+	block page-title
+		title Заголовок страницы	
 	include partials/head
 	body
 		.main

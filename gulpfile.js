@@ -8,18 +8,18 @@ var gulp = require('gulp'),
 
 
 gulp.task('template', function(){
-	gulp.src('src/template/*.jade')
+	gulp.src('app/templates/pages/*.jade')
 		.pipe(jade({
 			pretty: true
 		}))	
-		.pipe(gulp.dest('public'))
+		.pipe(gulp.dest('dist'))
 });
 
 gulp.task('default', ['template'],  function() {
-    gulp.src(['src/scss/main.scss'])
+    gulp.src(['app/scss/main.scss'])
 		.pipe(sass())
 		.pipe(notify('Файлы успешно обновлены!'))
-		.pipe(gulp.dest('public/css/'));
+		.pipe(gulp.dest('dist/css/'));
 });
 
 // gulp.task('image', function() {
@@ -39,7 +39,7 @@ gulp.task('default', ['template'],  function() {
 // });
 
 gulp.task('watch', function() {
-   gulp.watch(['src/scss/*.scss', 'src/scss/*/*.scss', 'src/template/*.jade', 'src/template/includes/*.jade'], ['default']);
+   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['default']);
 });
 
 

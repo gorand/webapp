@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
+	html2jade = require('gulp-html2jade'),
 	// imagemin = require('gulp-imagemin'),
-	// html2jade = require('gulp-html2jade'),
 	// iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
@@ -56,11 +56,12 @@ gulp.task('watch', function() {
 // 	.pipe(gulp.dest("public/fonts/iconcustom"))
 // });
 
-// gulp.task('html2jade', function(){
-// 	gulp.src('index.html')
-// 		.pipe(html2jade())
-// 		.pipe(gulp.dest('src'));
-// });
+ gulp.task('convert', function(){
+ 	gulp.src('raw/builder/html/*.html')
+ 		.pipe(html2jade())
+		.pipe(notify('Шаблоны .jade обновлены'))
+ 		.pipe(gulp.dest('raw/builder/jade'));
+ });
 
 // all tasks
 gulp.task('update', ['default', 'image', 'fonts']);

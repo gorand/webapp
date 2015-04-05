@@ -2,9 +2,8 @@
 ############
 node_modules
 bower_components
-raw/builder/html/
-raw/builder/jade/
-raw/psd/
+builder
+psd
 
 # Packages #
 ############

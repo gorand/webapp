@@ -2,7 +2,8 @@
 ############
 node_modules
 bower_components
-psd/*
+*/psd/*
+*/builder/*
 
 # Packages #
 ############

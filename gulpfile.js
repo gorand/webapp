@@ -2,10 +2,20 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
 	html2jade = require('gulp-html2jade'),
+	webserver = require('gulp-webserver'),
 	// imagemin = require('gulp-imagemin'),
 	// iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
+
+gulp.task('webserver', function(){
+	gulp.src('dist')
+		.pipe(webserver({
+			livereload: true,
+      		open: true
+		})
+	);
+});
 
 gulp.task('template', function(){
 	gulp.src('app/templates/pages/*.jade')
@@ -15,10 +25,10 @@ gulp.task('template', function(){
 		.pipe(gulp.dest('dist'))
 });
 
-gulp.task('default', ['template'],  function() {
+gulp.task('scss',  function() {
     gulp.src(['app/scss/main.scss'])
 		.pipe(sass())
-		.pipe(notify('Файлы успешно обновлены!'))
+		.pipe(notify('CSS-файлы успешно обновлены!'))
 		.pipe(gulp.dest('dist/css/'));
 });
 
@@ -63,5 +73,9 @@ gulp.task('watch', function() {
  		.pipe(gulp.dest('raw/builder/jade'));
  });
 
-// all tasks
+// default task
+gulp.task('default', ['webserver', 'scss', 'template', 'watch']);
+
+
+// other tasks
 gulp.task('update', ['default', 'image', 'fonts']);

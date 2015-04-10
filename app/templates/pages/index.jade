@@ -5,6 +5,10 @@ extends ./../layout.jade
 block page-title
 	title Стартовая страница
 
+block menu
+	-var currentItem = 'index.html';
+	include ./../partials/menu
+
 block content
 	section.part-content
 		header

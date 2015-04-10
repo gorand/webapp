@@ -1978,7 +1978,8 @@ a {
     border-bottom: none; }
 
 a.active {
-  cursor: default; }
+  cursor: default;
+  text-decoration: none; }
 
 .link-img {
   text-decoration: none; }

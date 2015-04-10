@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 gulp.task('webserver', function(){
 	gulp.src('dist')
 		.pipe(webserver({
+			port: 8080,
 			livereload: true,
       		open: true
 		})
@@ -58,7 +59,7 @@ gulp.task('scss',  function() {
 
 
 gulp.task('watch', function() {
-   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['default']);
+   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['scss', 'template']);
 });
 
 // other auxiliary tasks

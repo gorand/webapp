@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	webserver = require('gulp-webserver'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
-	// iconfont = require('gulp-iconfont'),
+	iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
 
@@ -58,21 +58,26 @@ gulp.task('watch', function() {
 });
 
 // other auxiliary tasks
-// gulp.task('fonts', function(){
-// 	gulp.src("src/icons/*.svg")
-// 	.pipe(iconfont({
-// 	  fontName: 'IconCustom',
-// 	  appendCodepoints: true  
-// 	}))
-// 	.on('codepoints', function(codepoints, options){
-// 		console.log(codepoints, options);
-// 	})
-// 	.pipe(gulp.dest("public/fonts/iconcustom"))
-// });
+ gulp.task('fonts', function(){
+ 	gulp.src("app/icons/*.svg")
+ 	.pipe(iconfont({
+ 	  fontName: 'iconproject',
+ 	  appendCodepoints: true  
+ 	}))
+ 	.on('codepoints', function(codepoints, options){
+ 		console.log(codepoints, options);
+ 	})
+ 	.pipe(gulp.dest("dist/fonts/iconproject"))
+ });
+
+// include fonts
+gulp.task('tofonts', function(){
+ 	gulp.src("bower_components/fontawesome/fonts/*")
+ 	.pipe(gulp.dest("dist/fonts/fontawesome"))
+ });
 
 // default task
 gulp.task('default', ['webserver', 'scss', 'template', 'watch']);
 
-
 // other tasks
-gulp.task('update', ['default', 'image', 'fonts']);
+gulp.task('update', ['scss', 'template', 'image', 'fonts']);

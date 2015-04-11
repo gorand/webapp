@@ -1,10 +1,13 @@
-// default
-@import "../../bower_components/normalize-scss/normalize";
+// default for light project without bootstrap
+//@import "../../bower_components/normalize-scss/normalize";
 
 // font Awesome
 @import "../../bower_components/fontawesome/scss/font-awesome";
+// typography font
+@import "../../bower_components/roboto-fontface/roboto-fontface";
 
 // === bootstrap partials ===
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 // grid-bootstrap
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix";

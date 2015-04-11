@@ -71,9 +71,13 @@ gulp.task('watch', function() {
  });
 
 // include fonts
-gulp.task('tofonts', function(){
+gulp.task('tofonts1', function(){
  	gulp.src("bower_components/fontawesome/fonts/*")
  	.pipe(gulp.dest("dist/fonts/fontawesome"))
+ });
+gulp.task('tofonts2', function(){
+ 	gulp.src("bower_components/roboto-fontface/fonts/*")
+ 	.pipe(gulp.dest("dist/fonts/roboto-fontface"))
  });
 
 // default task

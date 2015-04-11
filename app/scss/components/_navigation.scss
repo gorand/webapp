@@ -1,0 +1,15 @@
+.menu-wrap{
+	
+}
+.menu-list{
+	list-style: none;
+	padding: 0;
+}
+.menu-item{
+	
+}
+.menu-link{
+	&.active{
+		color: #5F5F5F;
+	}
+}

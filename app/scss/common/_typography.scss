@@ -1,6 +1,6 @@
 // Typography styles
 .main{
-	font: normal 15px/24px fira_sansbook, Arial, Verdana, Helvetica, sans-serif;
+	font: normal 15px/24px 'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
 	color: #4a545d;
 }
 h1{
@@ -10,7 +10,7 @@ h1{
 	margin: 0;
 	padding: 0 25px;
 	color: $blue-4;
-	font: normal 27px/58px fira_sanslight, Arial, Verdana, Helvetica, sans-serif;
+	font: normal 34px/58px  'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
 	border-bottom: solid 2px $blue-4;
 }
 h2, .title-h2{

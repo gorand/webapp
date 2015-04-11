@@ -3,7 +3,7 @@
 <!-- list (group)-->
 <!-- section (part content)--><!DOCTYPE html>
 <html>
-  <title>Форма обратной связи</title>
+  <title>Контактная информация</title>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,52 +46,42 @@
         <div class="row">
           <div class="col-md-3 col-md-offset-1">
             <div role="navigation" class="sidebar">
-              <div class="contact-wrap"> 
-                <h2 class="contact-title">Контакты</h2>
-                <ul class="contact-list">
-                  <li class="contact-item bg-blue-1"> <span class="fa fa-envelope-o"></span>gorandnik@inbox.ru</li>
-                  <li class="contact-item bg-blue-2"> <span class="fa fa-phone"></span>+7 (923) 289-76-91</li>
-                  <li class="contact-item bg-blue-3"> <span class="fa fa-skype"></span>gorandnik</li>
-                </ul>
+              <div class="sidebar-wrap">
+                <p>Содержание сайдбара</p>
               </div>
             </div>
           </div>
           <div class="col-md-7">
+            <nav class="menu-wrap">
+              <ul class="menu-list">
+                <li class="menu-item"><a href="index.html" title="Главная" class="menu-link">Главная</a></li>
+                <li class="menu-item"><a href="about.html" title="О нас" class="menu-link">О нас</a></li>
+                <li class="menu-item"><a href="contacts.html" title="Контакты" class="menu-link active">Контакты</a></li>
+              </ul>
+            </nav>
             <section class="form-content">
               <header class="header-form">
-                <h1 class="title-form">У вас интересный проект? Напишите мне</h1>
+                <h1 class="title-form">Возникли вопросы? Напишите нам!</h1>
               </header>
               <form role="form" class="form-feedback">
                 <div class="col-lg-4 col-lg-offset-2">
                   <div class="form-group">
                     <label for="nameLogin">Имя:</label>
-                    <input id="nameLogin" type="text" placeholder="Как к Вам обращаться" class="field-form form-control">
+                    <input id="nameLogin" type="text" placeholder="Ваше имя" class="field-form form-control">
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label for="Email">Email:</label>
-                    <input id="Email" type="email" placeholder="Куда мне писать" class="field-form form-control">
+                    <input id="Email" type="email" placeholder="Email" class="field-form form-control">
                   </div>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2">
                   <div class="form-group">
                     <label for="Messege">Сообщение</label>
-                    <textarea id="Message" rows="10" class="field-form form-conrtol">Кратко в чем суть </textarea>
+                    <textarea id="Message" rows="10" class="field-form form-conrtol">Текст сообщения </textarea>
                   </div>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                  <label for="Captcha">Введите код, указанный на картинке</label>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2">
-                  <div class="captcha form-group"><img src="media/captcha.png" alt="captcha"></div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="form-verticalmiddle">
-                    <input id="Captcha" type="text" placeholder="Введите код" class="field-form form-control">
-                  </div>
-                </div>
-                <div class="clearfix"></div>
                 <div class="col-lg-5 col-lg-offset-2">
                   <div class="form-group">
                     <button class="btn-form">Отправить</button>
@@ -104,6 +94,15 @@
                 </div>
               </form>
             </section>
+            <div class="contact-wrap"> 
+              <h2 class="contact-title">Контакты
+                <ul class="contact-list">
+                  <li class="contact-item bg-blue-1"> <span class="fa fa-envelope-o"></span>gorandnik@inbox.ru</li>
+                  <li class="contact-item bg-blue-2"> <span class="fa fa-phone"></span>+7 (923) 289-76-91</li>
+                  <li class="contact-item bg-blue-3"> <span class="fa fa-skype"></span>gorandnik</li>
+                </ul>
+              </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +110,7 @@
     <div class="container-fluid footer">
       <footer role="contentinfo">
         <div class="row text-center">
-          <p class="footer-info">&copy; 2014 Gordeev Andrey - Это мой сайт, пожалуйста, не копируйте и не воруйте его  </p>
+          <p class="footer-info">&copy; Gordeev</p>
         </div>
       </footer>
     </div>

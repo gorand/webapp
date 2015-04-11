@@ -1,0 +1,45 @@
+//- contacts
+extends ./../layout.jade
+
+block page-title 
+	title Контактная информация
+
+block menu
+	-var currentItem = 'contacts.html';
+	include ./../partials/menu
+
+block content
+	section.form-content
+		header.header-form
+			h1.title-form Возникли вопросы? Напишите нам!
+		form.form-feedback(role='form')
+			.col-lg-4.col-lg-offset-2
+				.form-group
+					label(for='nameLogin') Имя:
+					input.field-form.form-control#nameLogin(type='text' placeholder='Ваше имя')
+			.col-lg-4
+				.form-group
+					label(for='Email') Email:
+					input.field-form.form-control#Email(type='email' placeholder='Email')
+			.col-lg-8.col-lg-offset-2
+				.form-group
+					label(for='Messege') Сообщение
+					textarea.field-form.form-conrtol#Message(rows='10') Текст сообщения 
+			.col-lg-5.col-lg-offset-2
+				.form-group
+					button.btn-form Отправить
+			.col-lg-3.text-right
+				.form-group
+					button.btn-gray Очистить
+	.contact-wrap 
+		h2.contact-title Контакты
+			ul.contact-list
+				li.contact-item.bg-blue-1 
+					span.fa.fa-envelope-o
+					| gorandnik@inbox.ru
+				li.contact-item.bg-blue-2 
+					span.fa.fa-phone
+					| +7 (923) 289-76-91
+				li.contact-item.bg-blue-3 
+					span.fa.fa-skype
+					| gorandnik

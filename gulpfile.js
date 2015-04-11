@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	html2jade = require('gulp-html2jade'),
 	webserver = require('gulp-webserver'),
-	// imagemin = require('gulp-imagemin'),
+	imagemin = require('gulp-imagemin'),
+	pngquant = require('imagemin-pngquant'),
 	// iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
@@ -33,21 +34,15 @@ gulp.task('scss',  function() {
 		.pipe(gulp.dest('dist/css/'));
 });
 
-// gulp.task('image', function() {
-//     gulp.src('src/img/*')
-//       .pipe(imagemin({
-//       	progressive: true
-//       }))
-//       .pipe(gulp.dest('public/img'));
-// });
-
-// gulp.task('media', function() {
-//     gulp.src('src/content/*')
-//       .pipe(imagemin({
-//       	progressive: true
-//       }))
-//       .pipe(gulp.dest('public/media'));
-// });
+ gulp.task('image', function() {
+     gulp.src('dist/img/*')
+       .pipe(gulp.dest('raw/images'))
+       .pipe(imagemin({
+       		progressive: true,
+       		use: [pngquant()]
+       }))
+       .pipe(gulp.dest('dist/img'));
+ });
 
 
  gulp.task('convert', function(){

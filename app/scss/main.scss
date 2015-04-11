@@ -1,7 +1,15 @@
 // default
 @import "../../bower_components/normalize-scss/normalize";
 
-// variables and project mixins
+// === bootstrap partials ===
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+// grid-bootstrap
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid-framework";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+
+// variables and mixins for project 
 @import "config";
 
 // include fonts

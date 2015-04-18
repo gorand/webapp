@@ -9,10 +9,10 @@ block sidebar
 	include ./../partials/sidebar
 
 block content
-	section.form-content
-		header.header-form
-			h1.title-form Портфолио
-	article.info-inner
+	section.part-content
+		header
+			h1.title-h1 Портфолио
+		article.info-inner
 			.img-avatar
 				img.avatar(src="media/avatar.png")
 		+list('list-wrap', 'list-body', 'list-item', 'list-value', 'Тип', 'Специализация', 'Город')

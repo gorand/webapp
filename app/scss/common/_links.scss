@@ -1,7 +1,7 @@
 // Text links
 
 a{
-	color: #48cbe8;
+	color: $base-color;
 	transition: all 0.3s ease-in-out;
 	&:hover,&:focus{
 	  text-decoration:none;

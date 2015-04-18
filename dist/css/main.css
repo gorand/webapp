@@ -2631,7 +2631,7 @@ body {
   content: '\e004'; }
 
 a {
-  color: #48cbe8;
+  color: #38A00D;
   transition: all 0.3s ease-in-out; }
   a:hover, a:focus {
     text-decoration: none;
@@ -2645,22 +2645,21 @@ a.active {
   text-decoration: none; }
 
 .main {
-  font: normal 15px/24px 'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
-  color: #4a545d; }
+  font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif; }
 
 .title-h1 {
   display: inline-block;
   margin: 0;
   padding: 0 25px;
-  color: #3ba8c0;
+  color: #38A00D;
   font: normal 34px/58px 'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
-  border-bottom: solid 2px #3ba8c0; }
+  border-bottom: solid 2px #38A00D; }
 
 h3, .title-h3 {
-  font: normal 16px/24px fira_sansbook, Arial, Verdana, Helvetica, sans-serif; }
+  font: normal 16px/24px "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif; }
 
 p, .p, .p-normal {
-  font: normal 15px/24px fira_sansbook, Arial, Verdana, Helvetica, sans-serif; }
+  font: normal 15px/24px "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif; }
 
 .p-normal {
   font-weight: normal; }
@@ -2768,7 +2767,7 @@ img, video, audio, iframe, object {
   position: relative;
   z-index: 14;
   min-height: 119px;
-  background-color: #eff3f7; }
+  background-color: #F1F3F7; }
   .head:after {
     content: ""; }
   .head .head-logo .logo {
@@ -2802,15 +2801,16 @@ img, video, audio, iframe, object {
   padding: 0;
   z-index: 1;
   font: 13px/20px Arial, Helvetica, sans-serif;
-  background-color: #eff3f7; }
+  background-color: #F1F3F7; }
 
 .footer-info {
   margin: 30px 0 0;
   text-align: center; }
 
 .part-content {
-  background-color: #eff3f7;
-  border-radius: 4px;
+  background-color: #F1F3F7;
+  border: 1px solid #e7ebf1;
+  border-radius: 3px;
   margin-bottom: 20px;
   overflow: hidden;
   padding: 8px 0 18px; }
@@ -2867,7 +2867,7 @@ img, video, audio, iframe, object {
 .modal-body {
   padding: 15px;
   overflow: hidden;
-  background-color: #eff3f7; }
+  background-color: #F1F3F7; }
 
 .modal-form .field-form {
   font-size: 28px;

@@ -4,8 +4,9 @@
   font-style: normal;
 }
 @mixin part-content {
-	background-color: #eff3f7;
-	border-radius: 4px;
+	background-color: $base-background;
+	border: 1px solid darken($base-background, 3%);	
+	border-radius: 3px;
 	margin-bottom: 20px;
 	overflow: hidden;
 }

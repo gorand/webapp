@@ -1,0 +1,18 @@
+//- contacts
+extends ./../layout.jade
+
+block page-title 
+	title Наши работы
+
+block sidebar
+	-var currentItem = 'portfolio.html';
+	include ./../partials/sidebar
+
+block content
+	section.form-content
+		header.header-form
+			h1.title-form Портфолио
+	article.info-inner
+			.img-avatar
+				img.avatar(src="media/avatar.png")
+		+list('list-wrap', 'list-body', 'list-item', 'list-value', 'Тип', 'Специализация', 'Город')

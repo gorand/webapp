@@ -21,21 +21,21 @@
 
 // include fonts
 @import "common/fonts";
-@import "common/icons";
 @import "common/links";
 @import "common/typography";
+@import "common/icons";
+@import "common/symbols";
 
 // specific project styles
 @import "layouts/general";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/sidebar";
-@import "layouts/index";
 @import "layouts/modal";
+@import "helpers/proportions";
 
 
 // components
 @import "components/navigation";
 @import "components/buttons";
-@import "components/proportions";
-@import "components/symbols";
+@import "components/lists";

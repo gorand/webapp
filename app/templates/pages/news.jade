@@ -13,10 +13,10 @@ block content
 		header
 			h1.title-h1 Корпоративные новости
 		article.info-inner
-		-var news = { 1: {title: 'Первый заголовок', date: '12.08.2011', teaser: 'Вводная часть первой новости' }, 2: {title: 'Заголовок №2', date: '10.04.2011', teaser: 'Начало из второй новости' }, 3: {title: 'Так называется третья новость', date: '02.03.2011', teaser: 'Необычное название у третьей новости' } };
-			.news-list
-				each entry, key  in news
-					.news-item
-						a.news-title(href='news.html', title=entry.title)= entry.title
-						b.news-date= entry.date
-						p.news-teaser= entry.teaser
+			-var news = { 1: {title: 'Первый заголовок', date: '12.08.2011', teaser: 'Вводная часть первой новости' }, 2: {title: 'Заголовок №2', date: '10.04.2011', teaser: 'Начало из второй новости' }, 3: {title: 'Так называется третья новость', date: '02.03.2011', teaser: 'Необычное название у третьей новости' } };
+				.news-list
+					each entry, key  in news
+						.news-item
+							a.news-title(href='news.html', title=entry.title)= entry.title
+							b.news-date= entry.date
+							p.news-teaser= entry.teaser

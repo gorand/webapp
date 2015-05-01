@@ -6,10 +6,13 @@
 	padding: 0;
 }
 .menu-item{
-	
+	line-height: $lh-11*2;
 }
 .menu-link{
 	&.active{
 		color: #5F5F5F;
+		&:after{
+			content: " >";
+		}
 	}
 }

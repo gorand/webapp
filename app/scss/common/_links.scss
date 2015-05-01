@@ -2,9 +2,10 @@
 
 a{
 	color: $base-color;
-	transition: all 0.3s ease-in-out;
+	border-bottom: 1px solid $base-color;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;	
 	&:hover,&:focus{
-	  text-decoration:none;
 	  border-bottom: none;
 	}
 	  &:focus {
@@ -12,7 +13,7 @@ a{
 }
 a.active{
 	cursor: default;
-	text-decoration: none;
+	border-bottom: none;
 }
 
 // link for images

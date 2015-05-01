@@ -1,4 +1,11 @@
 // Typography styles
+body {
+  font-family: 'Roboto-Regular', Arial, Helvetica, Verdana, sans-serif; 
+  font-weight: 300;
+  font-style: normal;
+  font-size:100%;
+  line-height:1.6;
+}
 .main{
 	font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
 }
@@ -8,9 +15,9 @@ h1{
 	display: inline-block;
 	margin: 0;
 	padding: 0 25px;
-	color: $base-color;
+	color: $black-3;
 	font: normal 34px/58px  'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
-	border-bottom: solid 2px $base-color;
+	border-bottom: solid 2px $black-4;
 }
 h2, .title-h2{
 }
@@ -26,20 +33,20 @@ p, .p{
   font-weight: normal;
 }
 .p-gray{
-  font-size: $font-14;
-  line-height: $lh-20;
+  font-size: $font-7*2;
+  line-height: $lh-10*2;
   color: #5f5f5f;
 }
 .p-italic-gray{
-  font-size: $font-12;
-  line-height: $lh-16;
+  font-size: $font-6*2;
+  line-height: $lh-8*2;
 	font-style: italic;
 	color: $gray-7;
 }
 .text-sm{
   font-family: $font-arial;
-  font-size: $font-12;
-  line-height: $lh-24;
+  font-size: $font-6*2;
+  line-height: $lh-8*3;
 }
 .bold{
 	font-weight:bold;

@@ -5,10 +5,6 @@
     z-index: 14;
     min-height: 119px;
     background-color: $base-background;
-    &:after{
-    	content: "";
-        @extend %gradient-line; 
-    }
 	.head-logo{
 		.logo{
 	        font: 28px/1.35 Helvetica, Arial, Verdana, sans-serif;
@@ -23,18 +19,18 @@
                 margin-left: 22px;
                 .soc-link{
                     display: block;
-                    width: 47px;
-                    height: 47px;
+                    width: 52px;
+                    height: 52px;
                     border-radius: 50%;
-                    background-color: #58697a;
+                    background-color: $base-color-2;
                     color: #fff;
                     text-decoration: none;
                     &:hover{
-                        background-color: #3ba8c0;
+                        background-color: $base-color-3;
                     }
                     .soc-icon{
-                        font-size: 26px;
-                        line-height: 46px;
+                        font-size: 28px;
+                        line-height: 52px;
                         text-align: center;
                         display: block;
                     }

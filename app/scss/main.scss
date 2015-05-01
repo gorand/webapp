@@ -17,6 +17,7 @@
 
 // variables and mixins for project 
 @import "config";
+@import "helpers/variables";
 
 // include fonts
 @import "common/fonts";
@@ -28,6 +29,7 @@
 @import "layouts/general";
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/sidebar";
 @import "layouts/index";
 @import "layouts/modal";
 

@@ -5,6 +5,7 @@
     z-index: 14;
     min-height: 119px;
     background-color: $base-background;
+	border-bottom: solid 1px darken($base-background, 3%);
 	.head-logo{
 		.logo{
 	        font: 28px/1.35 Helvetica, Arial, Verdana, sans-serif;
@@ -15,6 +16,7 @@
 		}
 	}
     .head-soc{
+		text-align: right;
         .soc-wrap{
             margin: 35px 0 38px;
             .soc-item{

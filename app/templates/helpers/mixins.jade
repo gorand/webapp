@@ -1,11 +1,11 @@
-// menu
+-// menu
 mixin menu(classWrap, classItem, classLink, ...items)
 	ul(class=classWrap)
 		each item in items
 			li(class=classItem)
 				a(class=classLink href='#')= item
 
-// list (group)
+-// list (group)
 mixin list(classWrap, classBody, classItem, classValue, ...items)
 	div(class=classWrap)
 		ul(class=classBody)
@@ -13,7 +13,7 @@ mixin list(classWrap, classBody, classItem, classValue, ...items)
 				li(class=classItem)
 					b(class=classValue)= item
 
-// section (part content)
+-// section (part content)
 mixin section(classWrap, classSection, classInner, classTitle, ...items)
 	div(class=classWrap)
 		each item in items

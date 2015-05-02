@@ -1,0 +1,17 @@
+// sidebar
+.sidebar{
+	
+}
+.sidebar-wrap{
+	
+}
+.sidebar-title{
+	display: inline-block;
+	font-size: 1.25em;
+	padding: 4px 10px;
+	color: $black-2;
+	cursor: default;
+	background: $base-background;
+	border: solid 1px darken($base-background, 3%);
+	border-radius: 2px;
+}

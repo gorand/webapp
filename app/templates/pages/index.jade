@@ -14,7 +14,12 @@ block content
 		header
 			h1.title-h1 Заголовок стартовой страницы
 		article.info-inner
+			h3 Ненумерованный список
 			+list('list-wrap', 'list-body', 'list-item', 'list-value', 'Тип', 'Специализация', 'Город')
-			+menu('menu-wrap', 'menu-item', 'menu-link', "Первое", "Второе", "Третье", "Четвертое")
+			hr
+			h3 Список ссылок
+			+menu('menu-list', 'menu-item', 'menu-link', "Первое", "Второе", "Третье", "Четвертое")
+			hr
+			h3 Cписок секций
 			+section('section-wrap', 'section-item', 'section-info', 'section-title', 
-			'Опыт работы','Частые вопросы','История развития')
+			'Первая секция','Вторая','Секция номер 3')

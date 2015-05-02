@@ -23,12 +23,13 @@
 @import "config";
 @import "helpers/variables";
 
-// include fonts
+// include fonts and icons
 @import "common/fonts";
 @import "common/links";
 @import "common/typography";
 @import "common/icons";
 @import "common/symbols";
+@import "helpers/helpers";
 
 // specific project styles
 @import "layouts/general";

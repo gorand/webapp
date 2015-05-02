@@ -1,0 +1,18 @@
+.bold{
+	font-weight:bold;
+}
+.no-decor{
+  text-decoration: none;
+}
+.dotted{
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+}
+.no-userselect{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}

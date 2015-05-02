@@ -9,11 +9,15 @@
 // === bootstrap partials ===
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 // grid-bootstrap
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid-framework";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+// form-bootstrap
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/forms";
+
 
 // variables and mixins for project 
 @import "config";

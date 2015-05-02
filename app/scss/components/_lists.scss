@@ -1,9 +1,22 @@
+
 .list-wrap{
-	
 }
-.list-body{
+%list-body{
 	padding-left: 24px;	
 }
+.list-body{
+	@extend %list-body;
+	list-style-type: square;		
+}
+.list-body_notype{
+	@extend %list-body;
+	list-style-type: none;
+}
+%list-item{}
 .list-item{
-	list-style-type: square;
+	@extend %list-item;
+}
+.list-item_contact{
+	@extend %list-item;
+	font-size: $font-8*2.5;
 }

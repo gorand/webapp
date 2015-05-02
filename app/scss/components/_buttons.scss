@@ -6,13 +6,13 @@
 // Base styles
 // --------------------------------------------------
 %button-style{
-	padding: 2px 20px 0;
+	padding: 2px 18px;
 	max-width: 150px;
 	color: #f6f6f6;
-	border-radius: 5px;
-	font-family: "fira_sansbook";
-	font-size: 19px;
-	line-height: 30px;
+	border-radius: 3px;
+	font-size: $font-6*2.5;
+	line-height: $lh-8*4;
+	text-transform: uppercase;
 	border:none;
 	text-align: center;
 	vertical-align: middle;
@@ -23,21 +23,18 @@
 
 .btn-form{
 	@extend %button-style;
-	background-color: #48cbe8;
-	border-bottom: solid 2px #3ba8c0;
+	background-color: $base-color-1;
 	&:hover{
-		background-color: #0FB0D3;
-		border-bottom: solid 2px #2093AD;
+		background-color: $base-color-2;
 	}
 }
 
 .btn-gray{
 	@extend %button-style;
-	background-color: #849db5;
-	border-bottom: solid 2px #687b8f;
+	background-color: $gray-4;
 	&:hover{
-		background-color: #5F81A1;
-		border-bottom: solid 2px #4B6076;
+		background-color: $gray-3;
+		color: $gray-4;
 	}
 }
 

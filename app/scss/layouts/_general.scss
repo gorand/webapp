@@ -109,6 +109,10 @@ body{
     margin: 0;
 	line-height: 1.35;
 }
+//media styles
+img,video,audio,iframe,object{
+	max-width:100%;
+}
 
 %gradient-line{
     	width: 100%;
@@ -116,13 +120,3 @@ body{
  		background: linear-gradient(to right,  #85BB6E 0%,#11691f 43%,#11691f 57%,#85BB6E 100%); /* W3C */
 }
 
-//media styles
-img,video,audio,iframe,object{
-	max-width:100%;
-}
-
-//alignment
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }

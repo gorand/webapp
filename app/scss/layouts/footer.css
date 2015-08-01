@@ -1,0 +1,16 @@
+/* footer */
+.footer{
+	color:#4a545d;
+	height:80px;
+	position: relative;
+	padding: 0;
+	z-index:1;
+	font: 13px/20px Arial, Helvetica, sans-serif;
+    background-color: $base-background;
+	border-top: solid 1px darken($base-background, 3%);
+}
+.footer-info{
+	margin: 30px 0 0;
+	text-align: center;
+}
+

@@ -1,0 +1,34 @@
+/* symbol */
+
+@define-extend badge-icon{
+	content: "";
+	display: block;
+	float: left;
+	width: 42px;
+	background: url(../img/sprite-icons.png);
+	background-repeat: no-repeat;
+}
+.badge-case{
+	margin: 0 0 0 70px;
+	&:before{
+		@extend badge-icon;
+		height: 32px;
+		background-position: 0 0;
+	}
+}
+.badge-school{
+	margin: 0 0 0 70px;
+	&:before{
+		@extend badge-icon;
+		height: 26px;
+		background-position: 0 -32px;
+	}
+}
+.badge-doc{
+	margin: 0 0 0 70px;
+	&:before{
+		@extend badge-icon;
+		height: 34px;
+		background-position: 3px -58px;
+	}
+}

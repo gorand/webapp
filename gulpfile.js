@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
 	jade = require('gulp-jade'),
-	sass = require('gulp-sass'),
+	postcss = require('gulp-postcss'),
+	precss = require('precss'),
+	colorFunction = require("postcss-color-function"),	
 	webserver = require('gulp-webserver'),
 	notify = require('gulp-notify');
-
 
 gulp.task('webserver', function(){
 	gulp.src('dist')
@@ -23,14 +24,18 @@ gulp.task('template', function(){
 		.pipe(gulp.dest('dist'))
 });
 
-gulp.task('scss',  function() {
-    gulp.src(['app/scss/main.scss'])
-		.pipe(sass())
+gulp.task('postcss',  function() {
+	var processors = [
+			precss,
+			colorFunction
+		];
+    return gulp.src(['app/scss/main.css'])
+		.pipe(postcss(processors))
 		.pipe(notify('CSS-файлы успешно обновлены!'))
 		.pipe(gulp.dest('dist/css/'));
 });
 
- gulp.task('image', function() {
+gulp.task('image', function() {
      gulp.src('dist/img/*')
        .pipe(gulp.dest('raw/images'))
        .pipe(imagemin({
@@ -50,7 +55,7 @@ gulp.task('scss',  function() {
 
 
 gulp.task('watch', function() {
-   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['scss', 'template']);
+   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['postcss', 'template']);
 });
 
 // other auxiliary tasks
@@ -77,7 +82,7 @@ gulp.task('tofonts2', function(){
  });
 
 // default task
-gulp.task('default', ['webserver', 'scss', 'template', 'watch']);
+gulp.task('default', ['webserver', 'postcss', 'template', 'watch']);
 
 // other tasks
-gulp.task('update', ['scss', 'template', 'image', 'fonts']);
+gulp.task('update', ['postcss', 'template', 'image', 'fonts']);

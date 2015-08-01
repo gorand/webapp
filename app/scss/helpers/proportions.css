@@ -1,4 +1,4 @@
-// class for width
+/* class for width*/
 .w-152{
 	width: 152px;
 }
@@ -6,7 +6,7 @@
 	width: 560px;
 }
 
-// class for margin
+/* class for margin*/
 .mg-0_8{
   margin: 0 8px;
 }
@@ -16,4 +16,4 @@
 .mg-0_24{
   margin: 0 24px;
 }
-// class for padding
+/* class for padding*/

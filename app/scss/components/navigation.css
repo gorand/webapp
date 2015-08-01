@@ -10,7 +10,7 @@
 }
 .menu-link{
 	&.active{
-		color: darken($base-color, 15);
+		color: color($base-color saturation(15%));
 		&:after{
 			content: " >";
 		}

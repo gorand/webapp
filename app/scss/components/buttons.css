@@ -1,11 +1,11 @@
-// buttons
-%button-style{
+/* buttons */
+@define-extend button-style{
 	padding: 2px 18px;
 	max-width: 150px;
 	color: #f6f6f6;
 	border-radius: 3px;
-	font-size: $font-6*2.5;
-	line-height: $lh-8*4;
+	font-size: calc($font-6 * 2.5);
+	line-height: calc($lh-8 * 4);
 	text-transform: uppercase;
 	border:none;
 	text-align: center;
@@ -15,7 +15,7 @@
 	transition: all 0.18s ease-in;
 }
 .btn-form{
-	@extend %button-style;
+	@extend button-style;
 	background-color: $base-color-1;
 	&:hover{
 		background-color: $base-color-2;
@@ -23,7 +23,7 @@
 }
 
 .btn-gray{
-	@extend %button-style;
+	@extend button-style;
 	background-color: $gray-4;
 	&:hover{
 		background-color: $gray-3;
@@ -35,8 +35,8 @@
   width: 16px;
   background-color: $gray-5;
   color: $white;
-  font-size: $font-8*2.5;
-  line-height: $lh-8*2.5;
+  font-size: calc($font-8 * 2.5);
+  line-height: calc($lh-8 * 2.5);
   font-weight: bold;
   border: none;
   text-align: center;

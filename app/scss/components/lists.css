@@ -1,0 +1,22 @@
+
+.list-wrap{
+}
+@define-extend list-body{
+	padding-left: 24px;	
+}
+.list-body{
+	@extend list-body;
+	list-style-type: square;		
+}
+.list-body_notype{
+	@extend list-body;
+	list-style-type: none;
+}
+@define-extend list-item{}
+.list-item{
+	@extend list-item;
+}
+.list-item_contact{
+	@extend list-item;
+	font-size: calc($font-8 * 2.5);
+}

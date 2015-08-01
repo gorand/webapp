@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	precss = require('precss'),
 	colorFunction = require("postcss-color-function"),	
 	webserver = require('gulp-webserver'),
+ 	mainBowerFiles = require('main-bower-files'),
 	notify = require('gulp-notify');
 
 gulp.task('webserver', function(){
@@ -33,6 +34,11 @@ gulp.task('postcss',  function() {
 		.pipe(postcss(processors))
 		.pipe(notify('CSS-файлы успешно обновлены!'))
 		.pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task('mainBower', function() {
+	return gulp.src(mainBowerFiles())
+	    .pipe(gulp.dest('dist/lib'))
 });
 
 gulp.task('image', function() {

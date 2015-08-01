@@ -2702,13 +2702,13 @@ p, .p{
 
 .ico-facebook:before{
 	content: '\e005';
-	font-size: 10px*3+4px;
-	line-height: 12px*4;
+	font-size: calc(11px * 3);
+	line-height: calc(12px * 4);
 }
 
 .ico-twitter:before{
 	content: '\e003';
-	font-size: 8px*3+2px;
+	font-size: calc(9px * 3);
 }
 
 .ico-github:before{

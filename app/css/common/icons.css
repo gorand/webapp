@@ -72,13 +72,13 @@
 
 .ico-facebook:before{
 	content: '\e005';
-	font-size: $font-10*3+$font-4;
-	line-height: $lh-12*4;
+	font-size: calc($font-11 * 3);
+	line-height: calc($lh-12 * 4);
 }
 
 .ico-twitter:before{
 	content: '\e003';
-	font-size: $font-8*3+$font-2;
+	font-size: calc($font-9 * 3);
 }
 
 .ico-github:before{

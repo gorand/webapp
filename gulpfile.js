@@ -29,7 +29,7 @@ gulp.task('postcss',  function() {
 			precss,
 			colorFunction
 		];
-    return gulp.src(['app/scss/main.css'])
+    return gulp.src(['app/css/main.css'])
 		.pipe(postcss(processors))
 		.pipe(notify('CSS-файлы успешно обновлены!'))
 		.pipe(gulp.dest('dist/css/'));
@@ -55,7 +55,7 @@ gulp.task('image', function() {
 
 
 gulp.task('watch', function() {
-   gulp.watch(['app/scss/*.scss', 'app/scss/*/*.scss', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['postcss', 'template']);
+   gulp.watch(['app/css/*.css', 'app/css/*/*.css', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['postcss', 'template']);
 });
 
 // other auxiliary tasks

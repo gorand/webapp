@@ -5,8 +5,10 @@ var gulp = require('gulp'),
 	colorFunction = require("postcss-color-function"),	
 	webserver = require('gulp-webserver'),
  	mainBowerFiles = require('main-bower-files'),
+ 	iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
+// runing a webserver
 gulp.task('webserver', function(){
 	gulp.src('dist')
 		.pipe(webserver({
@@ -17,6 +19,7 @@ gulp.task('webserver', function(){
 	);
 });
 
+// convert from Jade to HTML
 gulp.task('template', function(){
 	gulp.src('app/templates/pages/*.jade')
 		.pipe(jade({
@@ -25,6 +28,7 @@ gulp.task('template', function(){
 		.pipe(gulp.dest('dist'))
 });
 
+// convert from PostCSS to CSS
 gulp.task('postcss',  function() {
 	var processors = [
 			precss,
@@ -36,11 +40,22 @@ gulp.task('postcss',  function() {
 		.pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('mainBower', function() {
-	return gulp.src(mainBowerFiles())
-	    .pipe(gulp.dest('dist/lib'))
+// main bower files
+gulp.task('fontsMainBower', function() {
+	return gulp.src(mainBowerFiles(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.otf']))
+	    .pipe(gulp.dest('dist/fonts/vendor'))
 });
+gulp.task('cssMainBower', function() {
+	return gulp.src(mainBowerFiles('**/*.css'))
+	    .pipe(gulp.dest('app/css/vendor'))
+});
+gulp.task('jsMainBower', function() {
+	return gulp.src(mainBowerFiles('**/*.js'))
+	    .pipe(gulp.dest('dist/js/vendor'))
+});
+gulp.task('allMainBower',['fontsMainBower', 'cssMainBower', 'jsMainBower']);
 
+// image optimization
 gulp.task('image', function() {
      gulp.src('dist/img/*')
        .pipe(gulp.dest('raw/images'))
@@ -51,7 +66,7 @@ gulp.task('image', function() {
        .pipe(gulp.dest('dist/img'));
  });
 
-
+// convert from HTML to Jade
  gulp.task('convert', function(){
  	gulp.src('raw/builder/html/*.html')
  		.pipe(html2jade())
@@ -91,4 +106,4 @@ gulp.task('tofonts2', function(){
 gulp.task('default', ['webserver', 'postcss', 'template', 'watch']);
 
 // other tasks
-gulp.task('update', ['postcss', 'template', 'image', 'fonts']);
+gulp.task('update', [ 'mainBower', 'postcss', 'template', 'fonts']);

@@ -1,13 +1,13 @@
 /* default for light project without bootstrap */
-@import "../../bower_components/normalize-scss/normalize";
+@import "vendor/normalize";
 
 /* font Awesome */
-@import "../../bower_components/fontawesome/css/font-awesome.css";
+@import "vendor/font-awesome";
 /* typography font */
-@import "../../bower_components/roboto-fontface/roboto-fontface.css";
+@import "vendor/roboto-fontface";
 
 /* === bootstrap === */
-@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "vendor/bootstrap";
 
 
 

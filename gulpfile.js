@@ -43,7 +43,7 @@ gulp.task('postcss',  function() {
 // main bower files
 gulp.task('fontsMainBower', function() {
 	return gulp.src(mainBowerFiles(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.otf']))
-	    .pipe(gulp.dest('dist/fonts/vendor'))
+	    .pipe(gulp.dest('dist/css/fonts'))
 });
 gulp.task('cssMainBower', function() {
 	return gulp.src(mainBowerFiles('**/*.css'))

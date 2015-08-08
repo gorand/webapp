@@ -1,33 +1,41 @@
-/* default for light project without bootstrap */
-@import "vendor/normalize";
 
-/* font Awesome */
+/** 
+ * Include of external style
+ =================================================*/
+@import "vendor/normalize";
+@import "vendor/bootstrap";
+
+/* icon font  */
 @import "vendor/font-awesome";
+
 /* typography font */
 @import "vendor/roboto-fontface";
 
-/* === bootstrap === */
-@import "vendor/bootstrap";
 
-/* variables and mixins for project */
+/** 
+ * Variables and mixins for project
+ =================================================*/
 @import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/helpers";
+@import "helpers/proportions";
 
-/* include fonts and icons */
+
+/** 
+ * Base project style
+ =================================================*/
+@import "common/base";
 @import "common/fonts";
 @import "common/links";
 @import "common/typography";
 @import "common/icons";
 @import "common/symbols";
-@import "helpers/helpers";
-
 
 /* specific project styles */
-@import "layouts/general";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/sidebar";
 @import "layouts/modal";
-@import "helpers/proportions";
 
 /* components */
 @import "components/buttons";

@@ -5,9 +5,9 @@ $info-color: #10bade; /*Good color for success etc.*/
 $warning-color: #dea110; /*Good color for success etc.*/
 $subtle-color: #999; /*Subtle color for subtle text*/
 $base-background: #F1F3F7;
-$base-color:#38A00D;
-$base-color-1:#1A743D;
-$base-color-2:#088C19;
+$base-color: #38A00D;
+$base-color-1: #1A743D;
+$base-color-2 :#088C19;
 
 $br: 3px;  /*Border-radius*/
 $btn-br: 3px;  /*Button border-radius*/
@@ -15,54 +15,55 @@ $padding: 40px;  /*Consistent padding and margins*/
 $margin: 10px;
 
 /*color*/
-$white:#fbfcfd;
-$black:#000;
-$black-1:#111;
-$black-2:#222;
-$black-3:#333;
-$black-4:#444;
-$blue:#3bbfce;
-$gray-2:#e2e2e2;
-$gray-e:#eee;
-$gray-d:#dadada;
-$gray-3:#d3d3d3;
-$gray-4:#444;
-$gray-5:#5c5c5c;
-$gray-7:#757575;
-$input-gray:#e4e4e4;
-$border-gray:#B4B4B4;
-$bg-gray:#383838;
-$bg-eee:#EEE;
-$color-success:#a7b92a;
-$color-error:#fc6767;
+$white: #fbfcfd;
+$black: #000;
+$black-1: #111;
+$black-2: #222;
+$black-3: #333;
+$black-4: #444;
+$blue: #3bbfce;
+$gray-2: #e2e2e2;
+$gray-e: #eee;
+$gray-d: #dadada;
+$gray-3: #d3d3d3;
+$gray-4: #444;
+$gray-5: #5c5c5c;
+$gray-7: #757575;
+$input-gray: #e4e4e4;
+$border-gray: #B4B4B4;
+$bg-gray: #383838;
+$bg-eee: #EEE;
+$color-success: #a7b92a;
+$color-error: #fc6767;
 
 /* fonts*/
 
+$font-external: fira_sansbook, Arial, Verdana, Helvetica, sans-serif;
 $font-default: Arial, Verdana, Helvetica, sans-serif;
-$font-1:1px;
-$font-2:2px;
-$font-3:3px;
-$font-4:4px;
-$font-5:5px;
-$font-6:6px;
-$font-7:7px;
-$font-8:8px;
-$font-9:9px;
-$font-10:10px;
-$font-11:11px;
+$font-1: 1px;
+$font-2: 2px;
+$font-3: 3px;
+$font-4: 4px;
+$font-5: 5px;
+$font-6: 6px;
+$font-7: 7px;
+$font-8: 8px;
+$font-9: 9px;
+$font-10: 10px;
+$font-11: 11px;
 
-$lh-2:2px;
-$lh-4:4px;
-$lh-5:5px;
-$lh-6:6px;
-$lh-7:7px;
-$lh-8:8px;
-$lh-9:9px;
-$lh-10:10px;
-$lh-11:11px;
-$lh-12:12px;
-$lh-13:13px;
-$lh-14:14px;
-$lh-15:15px;
-$lh-16:16px;
+$lh-2: 2px;
+$lh-4: 4px;
+$lh-5: 5px;
+$lh-6: 6px;
+$lh-7: 7px;
+$lh-8: 8px;
+$lh-9: 9px;
+$lh-10: 10px;
+$lh-11: 11px;
+$lh-12: 12px;
+$lh-13: 13px;
+$lh-14: 14px;
+$lh-15: 15px;
+$lh-16: 16px;
 

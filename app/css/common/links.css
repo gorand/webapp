@@ -14,7 +14,7 @@ a{
 	  &:focus {
 	}
 }
-a.active{
+a.is-active{
 	cursor: default;
 	border-bottom: none;
 }

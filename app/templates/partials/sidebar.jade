@@ -1,14 +1,14 @@
 - // main menu
 .sidebar(role='navigation')
 	.sidebar-wrap
-		b.sidebar-title Меню навигации
+		b.sidebar__title Меню навигации
 		-var items = { 'Главная': 'index.html', 'Новости': 'news.html', 'О нас': 'about.html', 'Контакты': 'contacts.html', 'Портфолио': 'portfolio.html' };
-		nav.menu-wrap
-			ul.menu-list
+		nav.sidemenu
+			ul.sidemenu__list
 				each value, key  in items
 					if currentItem === value
-						li.menu-item
-							a.menu-link.active(href=value, title=key)= key
+						li.sidemenu__item
+							a.sidemenu__link.is-active(href=value, title=key)= key
 					else
-						li.menu-item
-							a.menu-link(href=value, title=key)= key			
+						li.sidemenu__item
+							a.sidemenu__link(href=value, title=key)= key			

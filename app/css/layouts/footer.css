@@ -1,16 +1,16 @@
 /* footer */
 .footer{
-	color:#4a545d;
-	height:80px;
 	position: relative;
+	z-index: 1;
+	height: 80px;
 	padding: 0;
-	z-index:1;
-	font: 13px/20px Arial, Helvetica, sans-serif;
     background-color: $base-background;
-	border-top: solid 1px darken($base-background, 3%);
-}
-.footer-info{
-	margin: 30px 0 0;
-	text-align: center;
+	border-top: solid 1px color($base-background b(3%));
+	color: #4a545d;
+	font: 13px/20px $font-default;
+	&__info{
+		margin-top: 30px;
+		text-align: center;
+	}
 }
 

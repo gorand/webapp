@@ -1,18 +1,17 @@
-.menu-wrap{
-	
-}
-.menu-list{
-	list-style: none;
-	padding: 0;
-}
-.menu-item{
-	line-height: $lh-11*2;
-}
-.menu-link{
-	&.active{
-		color: color($base-color saturation(15%));
-		&:after{
-			content: " >";
+.sidemenu{
+	&__list{
+		list-style: none;
+		padding: 0;
+	}
+	&__item{
+		line-height: $lh-11*2;
+	}
+	&__link{
+		&.is-active{
+			color: color($base-color saturation(15%));
+			&:after{
+				content: " >";
+			}
 		}
 	}
 }

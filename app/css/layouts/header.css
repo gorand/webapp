@@ -1,44 +1,45 @@
 /* header */
 .header{
-	margin: 0 auto;
     position:relative;
     z-index: 14;
     min-height: 119px;
+    margin: 0 auto;
     background-color: $base-background;
 	border-bottom: solid 1px color($base-background saturation(3%)) ;
-	&-logo{
+	&__logo{
         font: 28px/1.35 $font-default;
-		margin: 26px 0 0;
+		margin-top: 26px;
 		&-link{
 			border-bottom: none;
 		}
+        &-img{}
 	}
-    &-soc{
+    &__soc{
 		text-align: right;
-        .soc-wrap{
+        &-list{
             margin: 35px 0 38px;
-            .soc-item{
-                display: inline-block;
-                margin-left: 22px;
-                .soc-link{
-                    display: block;
-                    width: 52px;
-                    height: 52px;
-                    border-radius: 50%;
-                    background-color: $base-color-1;
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover{
-                        background-color: $base-color-2;
-                    }
-                    .soc-icon{
-                        font-size: 28px;
-                        line-height: 52px;
-                        text-align: center;
-                        display: block;
-                    }
-                }
-            }        
+        }
+        &-item{
+            display: inline-block;
+            margin-left: 22px;
+        }        
+        &-link{
+            display: block;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: $base-color-1;
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+                background-color: $base-color-2;
+            }
+        }
+        &-icon{
+            display: block;
+            font-size: 28px;
+            line-height: 52px;
+            text-align: center;
         }
     }
 }

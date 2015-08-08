@@ -1,7 +1,7 @@
 /* symbol */
 
 @define-extend badge-icon{
-	content: "";
+	content: " ";
 	display: block;
 	float: left;
 	width: 42px;

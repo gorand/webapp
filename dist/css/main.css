@@ -9517,10 +9517,10 @@ a.is-active{
 /* Typography styles */
 body {
   font-family: "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif; 
-  font-weight: 100;
-  font-style: normal;
   font-size: 100%;
   line-height: 1.6;
+  font-weight: 100;
+  font-style: normal;
 }
 .main{
 	font: normal 15px/1.35 "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
@@ -9554,20 +9554,20 @@ p, .p{
   font-weight: normal;
 }
 .p-gray{
-  font-size: 7px*2;
-  line-height: 10px*2;
+  font-size: calc(1px * 14);
+  line-height: calc(1px * 20);
   color: #5f5f5f;
 }
 .p-italic-gray{
-  font-size: 6px*2;
-  line-height: 8px*2;
+  font-size: calc(1px * 12);
+  line-height: calc(1px * 16);
 	font-style: italic;
 	color: #757575;
 }
 .text-sm{
   font-family: Arial,Verdana,Helvetica,sans-serif;
-  font-size: 6px*2;
-  line-height: 8px*3;
+  font-size: calc(1px * 12);
+  line-height: calc(1px * 24);
 }
 .ico {
     display: inline-block;
@@ -9643,13 +9643,13 @@ p, .p{
 
 .ico-facebook:before{
 	content: '\e005';
-	font-size: calc(11px * 3);
-	line-height: calc(12px * 4);
+	font-size: calc(1px * 32);
+	line-height: calc(1px * 48);
 }
 
 .ico-twitter:before{
 	content: '\e003';
-	font-size: calc(9px * 3);
+	font-size: calc(1px * 28);
 }
 
 .ico-github:before{
@@ -9660,7 +9660,7 @@ p, .p{
 .badge-case:before,
 .badge-school:before,
 .badge-doc:before {
-	content: "";
+	content: " ";
 	display: block;
 	float: left;
 	width: 42px;
@@ -9808,8 +9808,8 @@ p, .p{
 	max-width: 150px;
 	color: #f6f6f6;
 	border-radius: 3px;
-	font-size: calc(6px * 2.5);
-	line-height: calc(8px * 4);
+	font-size: calc(1px * 13);
+	line-height: calc(1px * 32);
 	text-transform: uppercase;
 	border:none;
 	text-align: center;
@@ -9838,8 +9838,8 @@ p, .p{
   width: 16px;
   background-color: #5c5c5c;
   color: #fbfcfd;
-  font-size: calc(8px * 2.5);
-  line-height: calc(8px * 2.5);
+  font-size: (1px * 19);
+  line-height: (1px * 19);
   font-weight: bold;
   border: none;
   text-align: center;
@@ -9853,7 +9853,7 @@ p, .p{
   padding: 0;
 }
 .sidemenu__item{
-  line-height: 11px*2;
+  line-height: calc(1px * 22);
 }
 .sidemenu__link.is-active{
   color: rgb(81, 100, 74);
@@ -9878,5 +9878,5 @@ p, .p{
 .list-item{
 }
 .list-item_contact{
-	font-size: calc(8px * 2.5);
+	font-size: calc(1px * 17);
 }

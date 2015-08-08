@@ -18,5 +18,5 @@
 }
 .list-item_contact{
 	@extend list-item;
-	font-size: calc($font-8 * 2.5);
+	font-size: calc($font-unit * 17);
 }

@@ -4,7 +4,7 @@
 		padding: 0;
 	}
 	&__item{
-		line-height: $lh-11*2;
+		line-height: calc($font-unit * 22);
 	}
 	&__link{
 		&.is-active{

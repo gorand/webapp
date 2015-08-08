@@ -1,21 +1,19 @@
 /* header */
-.head{
+.header{
 	margin: 0 auto;
     position:relative;
     z-index: 14;
     min-height: 119px;
     background-color: $base-background;
-	border-bottom: solid 1px darken($base-background, 3%);
-	.head-logo{
-		.logo{
-	        font: 28px/1.35 Helvetica, Arial, Verdana, sans-serif;
-			margin: 26px 0 0;
-			.logo-link{
-				border-bottom: none;
-			}
+	border-bottom: solid 1px color($base-background saturation(3%)) ;
+	&-logo{
+        font: 28px/1.35 $font-default;
+		margin: 26px 0 0;
+		&-link{
+			border-bottom: none;
 		}
 	}
-    .head-soc{
+    &-soc{
 		text-align: right;
         .soc-wrap{
             margin: 35px 0 38px;

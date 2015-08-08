@@ -9293,11 +9293,8 @@ button.close {
   }
 }
 
-
-
-
-/* variables and mixins for project */  /*Border-radius*/  /*Button border-radius*/  /*Consistent padding and margins*/
-/*Set your project variables here*/ /*Bad color for errors, validation etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Subtle color for subtle text*/
+/* variables and mixins for project */
+/*Set your project variables here*/ /*Bad color for errors, validation etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Subtle color for subtle text*/  /*Border-radius*/  /*Button border-radius*/  /*Consistent padding and margins*/
 
 /*color*/
 
@@ -9418,7 +9415,7 @@ p, .p{
 	color: #757575;
 }
 .text-sm{
-  font-family: Arial,Verdana,Helvetica,sans-serif;
+  font-family: $font-arial;
   font-size: 6px*2;
   line-height: 8px*3;
 }
@@ -9673,32 +9670,32 @@ img,video,audio,iframe,object{
 	max-width:100%;
 }
 /* header */
-.head{
+.header{
 	margin: 0 auto;
     position:relative;
     z-index: 14;
     min-height: 119px;
     background-color: #F1F3F7;
-	border-bottom: solid 1px darken(#F1F3F7, 3%);
+	border-bottom: solid 1px rgb(244, 245, 245) ;
 }
-.head .head-logo .logo{
-  font: 28px/1.35 Helvetica, Arial, Verdana, sans-serif;
+.header-logo{
+  font: 28px/1.35 Arial,Verdana,Helvetica,sans-serif;
   margin: 26px 0 0;
 }
-.head .head-logo .logo .logo-link{
+.header-logo-link{
   border-bottom: none;
 }
-.head .head-soc{
+.header-soc{
   text-align: right;
 }
-.head .head-soc .soc-wrap{
+.header-soc .soc-wrap{
   margin: 35px 0 38px;
 }
-.head .head-soc .soc-wrap .soc-item{
+.header-soc .soc-wrap .soc-item{
   display: inline-block;
   margin-left: 22px;
 }
-.head .head-soc .soc-wrap .soc-item .soc-link{
+.header-soc .soc-wrap .soc-item .soc-link{
   display: block;
   width: 52px;
   height: 52px;
@@ -9707,10 +9704,10 @@ img,video,audio,iframe,object{
   color: #fff;
   text-decoration: none;
 }
-.head .head-soc .soc-wrap .soc-item .soc-link:hover{
+.header-soc .soc-wrap .soc-item .soc-link:hover{
   background-color: #088C19;
 }
-.head .head-soc .soc-wrap .soc-item .soc-link .soc-icon{
+.header-soc .soc-wrap .soc-item .soc-link .soc-icon{
   font-size: 28px;
   line-height: 52px;
   text-align: center;

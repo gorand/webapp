@@ -9,6 +9,11 @@ $base-color:#38A00D;
 $base-color-1:#1A743D;
 $base-color-2:#088C19;
 
+$br: 3px;  /*Border-radius*/
+$btn-br: 3px;  /*Button border-radius*/
+$padding: 40px;  /*Consistent padding and margins*/
+$margin: 10px;
+
 /*color*/
 $white:#fbfcfd;
 $black:#000;
@@ -32,7 +37,8 @@ $color-success:#a7b92a;
 $color-error:#fc6767;
 
 /* fonts*/
-$font-arial: Arial, Verdana, Helvetica, sans-serif; 
+
+$font-default: Arial, Verdana, Helvetica, sans-serif;
 $font-1:1px;
 $font-2:2px;
 $font-3:3px;
@@ -59,3 +65,4 @@ $lh-13:13px;
 $lh-14:14px;
 $lh-15:15px;
 $lh-16:16px;
+

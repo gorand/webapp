@@ -9,11 +9,7 @@
 /* === bootstrap === */
 @import "vendor/bootstrap";
 
-
-
-
 /* variables and mixins for project */
-@import "config";
 @import "helpers/variables";
 
 /* include fonts and icons */

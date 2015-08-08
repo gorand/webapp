@@ -1,26 +1,22 @@
 /* Text links */
 
 a{
-	color: $base-color;
 	border-bottom: 1px solid $base-color;
 	font-size: 1em;
 	line-height: 1.65;
+	color: $base-color;
 	transition: all 0.3s cubic-bezier(0.05, 0.6, 0.6, 0.25);	
 	&:hover{
-		color: color($base-color saturation(90%));
 		border-bottom-color: color($base-color lightness(45%));
+		color: color($base-color saturation(90%));
 		text-decoration: none;
 	}
 	  &:focus {
 	}
 }
 a.is-active{
-	cursor: default;
 	border-bottom: none;
+	cursor: default;
 }
 
-/* link for images */
-.link-img{
-	text-decoration: none;
-}
 

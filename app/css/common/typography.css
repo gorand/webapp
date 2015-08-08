@@ -1,13 +1,13 @@
 /* Typography styles */
 body {
-  font-family: 'Roboto-Regular', Arial, Helvetica, Verdana, sans-serif; 
+  font-family: $font-additional; 
   font-weight: 100;
   font-style: normal;
   font-size: 100%;
   line-height: 1.6;
 }
 .main{
-	font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 15px/1.35 $font-additional;
 }
 hr{
 	border-bottom: transparent;
@@ -19,20 +19,20 @@ h1{
 	margin: 0;
 	padding: 0 25px;
 	color: $black-3;
-	font: normal 34px/58px  'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
+	font: normal 34px/58px $font-additional;
 	border-bottom: solid 2px $black-4;
 }
 h2, .title-h2{
 }
 h3, .title-h3{
-	font: normal 16px/24px "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 16px/24px $font-additional;
 }
 
 @define-extend p{
-  font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+  font: normal 15px/1.35 $font-additional;
 }
 p, .p{
-	font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 15px/1.35 $font-additional;
 }
 .p-normal{
   @extend p;
@@ -50,7 +50,7 @@ p, .p{
 	color: $gray-7;
 }
 .text-sm{
-  font-family: $font-arial;
+  font-family: $font-default;
   font-size: $font-6*2;
   line-height: $lh-8*3;
 }

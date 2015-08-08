@@ -9496,39 +9496,34 @@ img,video,audio,iframe,object{
 /* Text links */
 
 a{
-	color: #38A00D;
 	border-bottom: 1px solid #38A00D;
 	font-size: 1em;
 	line-height: 1.65;
+	color: #38A00D;
 	transition: all 0.3s cubic-bezier(0.05, 0.6, 0.6, 0.25);
 }
 
 a:hover{
-  color: rgb(55, 165, 9);
   border-bottom-color: rgb(76, 212, 17);
+  color: rgb(55, 165, 9);
   text-decoration: none;
 }
 
 a:focus {}
 a.is-active{
-	cursor: default;
 	border-bottom: none;
-}
-
-/* link for images */
-.link-img{
-	text-decoration: none;
+	cursor: default;
 }
 /* Typography styles */
 body {
-  font-family: 'Roboto-Regular', Arial, Helvetica, Verdana, sans-serif; 
+  font-family: "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif; 
   font-weight: 100;
   font-style: normal;
   font-size: 100%;
   line-height: 1.6;
 }
 .main{
-	font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 15px/1.35 "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 }
 hr{
 	border-bottom: transparent;
@@ -9540,20 +9535,20 @@ h1{
 	margin: 0;
 	padding: 0 25px;
 	color: #333;
-	font: normal 34px/58px  'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
+	font: normal 34px/58px "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 	border-bottom: solid 2px #444;
 }
 h2, .title-h2{
 }
 h3, .title-h3{
-	font: normal 16px/24px "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 16px/24px "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 }
 
 .p-normal {
-  font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+  font: normal 15px/1.35 "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 }
 p, .p{
-	font: normal 15px/1.35 "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
+	font: normal 15px/1.35 "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 }
 .p-normal{
   font-weight: normal;
@@ -9570,7 +9565,7 @@ p, .p{
 	color: #757575;
 }
 .text-sm{
-  font-family: $font-arial;
+  font-family: Arial,Verdana,Helvetica,sans-serif;
   font-size: 6px*2;
   line-height: 8px*3;
 }

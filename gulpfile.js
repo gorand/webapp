@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	colorFunction = require("postcss-color-function"),	
 	browserSync = require('browser-sync').create(),
  	mainBowerFiles = require('main-bower-files'),
+	rename = require("gulp-rename"),
  	iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
@@ -34,7 +35,8 @@ gulp.task('postcss',  function() {
 		];
     return gulp.src(['app/css/main.css'])
 		.pipe(postcss(processors))
-		.pipe(notify('CSS-файлы успешно обновлены!'))
+		.pipe(notify('CSS-файлы успешно обновлены'))
+		.pipe(rename('style.css'))
 		.pipe(gulp.dest('dist/css/'));
 });
 

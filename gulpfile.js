@@ -24,7 +24,8 @@ gulp.task('template', function(){
 	gulp.src('app/templates/pages/*.jade')
 		.pipe(jade({
 			pretty: true
-		}))	
+		}))
+		.pipe(notify('HTML-страницы обновлены'))
 		.pipe(gulp.dest('dist'))
 });
 
@@ -36,7 +37,7 @@ gulp.task('postcss',  function() {
 		];
     return gulp.src(['app/css/main.css'])
 		.pipe(postcss(processors))
-		.pipe(notify('CSS-файлы успешно обновлены!'))
+		.pipe(notify('CSS-файлы успешно обновлены'))
 		.pipe(gulp.dest('dist/css/'));
 });
 
@@ -74,9 +75,10 @@ gulp.task('image', function() {
  		.pipe(gulp.dest('raw/builder/jade'));
  });
 
-
+// watch
 gulp.task('watch', function() {
-   gulp.watch(['app/css/*.css', 'app/css/*/*.css', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['postcss', 'template']);
+   gulp.watch(['app/css/*.css', 'app/css/**/*.css'], ['postcss']);
+   gulp.watch(['app/templates/*.jade', 'app/templates/**/*.jade'], ['template']);
 });
 
 // other auxiliary tasks
@@ -118,9 +120,6 @@ gulp.task('tofonts2', function(){
 	gulp.src("bower_components/roboto-fontface/fonts/*")
 	.pipe(gulp.dest("dist/fonts/roboto-fontface"))
 });
-// other tasks
-gulp.task('update', ['scss', 'template', 'image', 'fonts']);
-
 
 // default task
 gulp.task('default', ['webserver', 'postcss', 'template', 'watch']);

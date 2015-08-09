@@ -9,10 +9,10 @@ block sidebar
 	include ./../partials/sidebar
 
 block content
-	section.form-content
-		header.header-form
-			h1.title-form Возникли вопросы? Напишите нам!
-		form.form-feedback(role='form')
+	section.form
+		header.form__head
+			h1.form__title Возникли вопросы? Напишите нам!
+		form.form--feedback(role='form')
 			.col-lg-8
 				.form-group
 					label(for='nameLogin') Имя:
@@ -32,15 +32,15 @@ block content
 				.form-group
 					button.btn-gray Очистить
 	.col-lg-10
-		.list-wrap 
-			h2.list-title Контакты
-				ul.list-body_notype
-					li.list-item_contact 
+		.list__wrap 
+			h2.list__title Контакты
+				ul.list__body_notype
+					li.list__item_contact 
 						span.fa.fa-envelope
 						|  email@info.com
-					li.list-item_contact
+					li.list__item_contact
 						span.fa.fa-phone
 						|  +7 (123) 457-78-90
-					li.list-item_contact 
+					li.list__item_contact 
 						span.fa.fa-skype
 						|  login_skype

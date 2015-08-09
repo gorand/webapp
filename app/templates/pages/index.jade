@@ -11,15 +11,15 @@ block sidebar
 
 block content
 	section.part--content
-		header.part__header
-			h1.part__title.title-h1 Заголовок стартовой страницы
+		header.part__head
+			h1.part__title Заголовок стартовой страницы
 		article.part__inner
 			h3 Ненумерованный список
-			+list('list-wrap', 'list-body', 'list-item', 'list-value', 'Тип', 'Специализация', 'Город')
+			+list('list__wrap', 'list__body', 'list__item', 'list__value', 'Тип', 'Специализация', 'Город')
 			hr
 			h3 Список ссылок
-			+menu('menu-list', 'menu-item', 'menu-link', "Первое", "Второе", "Третье", "Четвертое")
+			+menu('menu__list', 'menu__item', 'menu__link', "Первое", "Второе", "Третье", "Четвертое")
 			hr
 			h3 Cписок секций
-			+section('section-wrap', 'section-item', 'section-info', 'section-title', 
+			+section('section__wrap', 'section__item', 'section__info', 'section__title', 
 			'Первая секция','Вторая','Секция номер 3')

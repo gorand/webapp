@@ -3,12 +3,12 @@
 	.sidebar-wrap
 		b.sidebar__title Меню навигации
 		-var items = { 'Главная': 'index.html', 'Новости': 'news.html', 'О нас': 'about.html', 'Контакты': 'contacts.html', 'Портфолио': 'portfolio.html' };
-		nav.sidemenu
-			ul.sidemenu__list
+		nav.menu
+			ul.menu__list
 				each value, key  in items
 					if currentItem === value
-						li.sidemenu__item
-							a.sidemenu__link.is-active(href=value, title=key)= key
+						li.menu__item
+							a.menu__link.is-active(href=value, title=key)= key
 					else
-						li.sidemenu__item
-							a.sidemenu__link(href=value, title=key)= key			
+						li.menu__item
+							a.menu__link(href=value, title=key)= key			

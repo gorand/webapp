@@ -3,20 +3,18 @@ var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	precss = require('precss'),
 	colorFunction = require("postcss-color-function"),	
-	webserver = require('gulp-webserver'),
+	browserSync = require('browser-sync').create(),
  	mainBowerFiles = require('main-bower-files'),
  	iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
 // runing a webserver
-gulp.task('webserver', function(){
-	gulp.src('dist')
-		.pipe(webserver({
-			port: 8080,
-			livereload: true,
-      		open: true
-		})
-	);
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    });
 });
 
 // convert from Jade to HTML
@@ -76,7 +74,7 @@ gulp.task('image', function() {
 
 
 gulp.task('watch', function() {
-   gulp.watch(['app/css/*.css', 'app/css/*/*.css', 'app/templates/*.jade', 'app/templates/*/*.jade'], ['postcss', 'template']);
+   gulp.watch(['app/css/*.css', 'app/css/**/*.css', 'app/templates/*.jade', 'app/templates/**/*.jade'], ['postcss', 'template']).on("change", browserSync.reload);
 });
 
 // other auxiliary tasks
@@ -118,12 +116,10 @@ gulp.task('tofonts2', function(){
 	gulp.src("bower_components/roboto-fontface/fonts/*")
 	.pipe(gulp.dest("dist/fonts/roboto-fontface"))
 });
-// other tasks
-gulp.task('update', ['scss', 'template', 'image', 'fonts']);
 
 
 // default task
-gulp.task('default', ['webserver', 'postcss', 'template', 'watch']);
+gulp.task('default', ['browser-sync', 'postcss', 'template', 'watch']);
 
 // other tasks
 gulp.task('update', [ 'mainBower', 'postcss', 'template', 'fonts']);

@@ -9,11 +9,11 @@ block sidebar
 	include ./../partials/sidebar
 
 block content
-	section.part-content
-		header
-			h1.title-h1 Портфолио
-		article.info-inner
+	section.part--content
+		header.part__head
+			h1.part__title Портфолио
+		article.part__inner
 			.img-avatar
 				img(src="img/media/work_01.png")
-				+menu('menu-list', 'menu-item', 'menu-link', "Работа №1", "Работа №2", "Работа №3", "Работа №4")
+				+menu('menu__list', 'menu__item', 'menu__link', "Работа №1", "Работа №2", "Работа №3", "Работа №4")
 

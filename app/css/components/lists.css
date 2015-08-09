@@ -1,22 +1,21 @@
 
-.list-wrap{
-}
-@define-extend list-body{
+@define-extend listBody{
 	padding-left: 24px;	
 }
-.list-body{
-	@extend list-body;
-	list-style-type: square;		
-}
-.list-body_notype{
-	@extend list-body;
-	list-style-type: none;
-}
-@define-extend list-item{}
-.list-item{
-	@extend list-item;
-}
-.list-item_contact{
-	@extend list-item;
-	font-size: calc($font-unit * 17);
+@define-extend listItem{}
+.list{
+	&__wrap{}
+	&__body{
+		@extend listBody;
+		list-style-type: square;
+		&--notype{
+			list-style-type: none;
+		}		
+	}
+	&__item{
+		@extend listItem;
+		&-contact{
+			font-size: calc($font-unit * 17);
+		}
+	}
 }

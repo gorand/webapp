@@ -9408,51 +9408,7 @@ body{
   border-bottom: solid 2px #444;
 }
 
-.part-content .list-content .list-wrap{
-  margin-left: 272px;
-  padding: 0;
-  font: normal 15px/46px fira_sansbook,Arial,Verdana,Helvetica,sans-serif;
-  color: #37424d;
-}
-
-.part-content .list-content .list-wrap .list-item{
-  list-style: none;
-}
-
-.part-content .list-content .list-wrap .list-item .list-prop{
-  float: left;
-  font: 500 16px/46px fira_sansbook,Arial,Verdana,Helvetica,sans-serif;
-  color: #4a545d;
-}
-
-.part-content .list-content .list-wrap .list-item .list-value{
-  margin-left: 10px;
-}
-
-.part-content .list-content .list-wrap .list-item .tag-wrap{
-  padding: 6px 0 0;
-}
-
-.part-content .list-content .list-wrap .list-item .tag-wrap .tag-item{
-  display: inline-block;
-  float: left;
-  margin: 6px 4px 0 0;
-  list-style: none;
-}
-
-.part-content .list-content .list-wrap .list-item .tag-wrap .tag-item:first-child{
-}
-
-.part-content .simple-list .badge-title{
-  margin-left: 60px;
-}
-
-.part-content .simple-list .badge-text{
-  margin-left: 60px;
-  font: normal 15px/18px fira_sansbook,Arial,Verdana,Helvetica,sans-serif;
-}
-
-/* news*/
+/* news */
 .news__item{
   margin-bottom: 10px;
   padding: 0 0 10px;
@@ -9469,10 +9425,6 @@ body{
 .news__teaser{
   margin: 0;
   line-height: 1.35;
-}
-/*media styles*/
-img,video,audio,iframe,object{
-	max-width:100%;
 }
 /* icon for Project - custom font*/
 
@@ -9868,36 +9820,34 @@ p, .p{
 .btn-close:active{
   background-color: #858585;
 }
-.sidemenu__list{
+.menu__list{
   list-style: none;
   padding: 0;
 }
-.sidemenu__item{
+.menu__item{
   line-height: calc(1px * 22);
 }
-.sidemenu__link.is-active{
+.menu__link.is-active{
   color: rgb(81, 100, 74);
 }
-.sidemenu__link.is-active:after{
+.menu__link.is-active:after{
   content: " >";
 }
-.list-wrap{
-}
-.list-body,
-.list-body_notype {
+.list__body {
 	padding-left: 24px;
 }
-.list-body{
-	list-style-type: square;		
+.list__item {
 }
-.list-body_notype{
-	list-style-type: none;
+.list__wrap{
 }
-.list-item,
-.list-item_contact {
+.list__body{
+  list-style-type: square;
 }
-.list-item{
+.list__body--notype{
+  list-style-type: none;
 }
-.list-item_contact{
-	font-size: calc(1px * 17);
+.list__item{
+}
+.list__item-contact{
+  font-size: calc(1px * 17);
 }

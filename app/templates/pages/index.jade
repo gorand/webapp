@@ -10,10 +10,10 @@ block sidebar
 	include ./../partials/sidebar
 
 block content
-	section.part-content
-		header
-			h1.title-h1 Заголовок стартовой страницы
-		article.info-inner
+	section.part--content
+		header.part__header
+			h1.part__title.title-h1 Заголовок стартовой страницы
+		article.part__inner
 			h3 Ненумерованный список
 			+list('list-wrap', 'list-body', 'list-item', 'list-value', 'Тип', 'Специализация', 'Город')
 			hr

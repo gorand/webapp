@@ -1,5 +1,4 @@
-/* Text links */
-
+/* Links in text */
 a{
 	border-bottom: 1px solid $base-color;
 	font-size: 1em;
@@ -11,8 +10,7 @@ a{
 		color: color($base-color saturation(90%));
 		text-decoration: none;
 	}
-	  &:focus {
-	}
+	&:focus {}
 }
 a.is-active{
 	border-bottom: none;

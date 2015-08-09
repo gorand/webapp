@@ -1,11 +1,13 @@
 /* header */
-.header{
+#header{
     position:relative;
     z-index: 14;
     min-height: 119px;
     margin: 0 auto;
     background-color: $base-background;
-	border-bottom: solid 1px color($base-background saturation(3%)) ;
+    border-bottom: solid 1px color($base-background b(* 4)) ;
+}
+.header{
 	&__logo{
         font: 28px/1.35 $font-default;
 		margin-top: 26px;

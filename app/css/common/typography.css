@@ -1,13 +1,10 @@
 /* Typography styles */
 body {
   font-family: $font-additional; 
-  font-size: 100%;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.35;
   font-weight: 100;
   font-style: normal;
-}
-.main{
-	font: normal 15px/1.35 $font-additional;
 }
 hr{
 	border-bottom: transparent;

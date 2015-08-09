@@ -9301,7 +9301,7 @@ button.close {
  =================================================*/
 /*Set your project variables here*/ /*Bad color for errors, validation etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Good color for success etc.*/ /*Subtle color for subtle text*/  /*Border-radius*/  /*Button border-radius*/  /*Consistent padding and margins*/
 
-/*color*/
+/* colors */
 
 /* fonts*/
 .bold{
@@ -9368,7 +9368,7 @@ body{
 	height: 100%;
 	width: 100%;
 }
-.main{
+#main{
     position: relative;
     z-index: 2;
     width: 100%;
@@ -9403,9 +9403,9 @@ body{
   display: inline-block;
   margin: 0;
   padding: 0 25px;
-  color: #333;
+  color: rgb(62, 62, 62);
   font: normal 34px/58px "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
-  border-bottom: solid 2px #444;
+  border-bottom: solid 2px rgb(56, 56, 56);
 }
 
 /* news */
@@ -9425,6 +9425,10 @@ body{
 .news__teaser{
   margin: 0;
   line-height: 1.35;
+}
+/* media styles */
+img,video,audio,iframe,object{
+	max-width:100%;
 }
 /* icon for Project - custom font*/
 
@@ -9462,8 +9466,7 @@ body{
   font-weight: normal;
   font-style: normal;
 }
-/* Text links */
-
+/* Links in text */
 a{
 	border-bottom: 1px solid #38A00D;
 	font-size: 1em;
@@ -9471,13 +9474,11 @@ a{
 	color: #38A00D;
 	transition: all 0.3s cubic-bezier(0.05, 0.6, 0.6, 0.25);
 }
-
 a:hover{
   border-bottom-color: rgb(76, 212, 17);
   color: rgb(55, 165, 9);
   text-decoration: none;
 }
-
 a:focus {
 }
 a.is-active{
@@ -9487,13 +9488,10 @@ a.is-active{
 /* Typography styles */
 body {
   font-family: "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif; 
-  font-size: 100%;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.35;
   font-weight: 100;
   font-style: normal;
-}
-.main{
-	font: normal 15px/1.35 "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
 }
 hr{
 	border-bottom: transparent;
@@ -9504,9 +9502,9 @@ h1{
 	display: inline-block;
 	margin: 0;
 	padding: 0 25px;
-	color: #333;
+	color: $black-3;
 	font: normal 34px/58px "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
-	border-bottom: solid 2px #444;
+	border-bottom: solid 2px $black-4;
 }
 h2, .title-h2{
 }
@@ -9532,7 +9530,7 @@ p, .p{
   font-size: calc(1px * 12);
   line-height: calc(1px * 16);
 	font-style: italic;
-	color: #757575;
+	color: $gray-7;
 }
 .text-sm{
   font-family: Arial,Verdana,Helvetica,sans-serif;
@@ -9661,13 +9659,13 @@ p, .p{
 
 /* specific project styles */
 /* header */
-.header{
+#header{
     position:relative;
     z-index: 14;
     min-height: 119px;
     margin: 0 auto;
     background-color: #F1F3F7;
-	border-bottom: solid 1px rgb(244, 245, 245) ;
+    border-bottom: solid 1px rgb(226, 226, 226) ;
 }
 .header__logo{
   font: 28px/1.35 Arial,Verdana,Helvetica,sans-serif;
@@ -9707,13 +9705,15 @@ p, .p{
   text-align: center;
 }
 /* footer */
-.footer{
+#footer{
 	position: relative;
 	z-index: 1;
 	height: 80px;
 	padding: 0;
     background-color: #F1F3F7;
 	border-top: solid 1px rgb(242, 244, 247);
+ }
+.footer{
 	color: #4a545d;
 	font: 13px/20px Arial,Verdana,Helvetica,sans-serif;
 }
@@ -9728,10 +9728,10 @@ p, .p{
   display: inline-block;
   padding: 4px 10px;
   background: #F1F3F7;
-  border: solid 1px darken(#F1F3F7, 3%);
+  border: solid 1px rgb(220, 220, 220);
   border-radius: 2px;
   font-size: 1.25em;
-  color: #222;
+  color: $black-2;
   cursor: default;
 }
 /* custom madal layouts */
@@ -9798,18 +9798,18 @@ p, .p{
 }
 
 .btn-gray{
-	background-color: #444;
+	background-color: $gray-4;
 }
 
 .btn-gray:hover{
-  background-color: #d3d3d3;
-  color: #444;
+  background-color: $gray-3;
+  color: $gray-4;
 }
 .btn-close{
   height: 16px;
   width: 16px;
-  background-color: #5c5c5c;
-  color: #fbfcfd;
+  background-color: $gray-5;
+  color: $white;
   font-size: (1px * 19);
   line-height: (1px * 19);
   font-weight: bold;
@@ -9833,7 +9833,8 @@ p, .p{
 .menu__link.is-active:after{
   content: " >";
 }
-.list__body {
+.list__body,
+.list__body--notype {
 	padding-left: 24px;
 }
 .list__item {

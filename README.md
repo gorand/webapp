@@ -4,7 +4,7 @@ Structure for a simple web site
 ##Installation
 
 ```js
-npm install gulp gulp-sass gulp-jade gulp-notify gulp-webserver --save-dev
+npm install gulp gulp-postcss gulp-jade gulp-notify gulp-webserver --save-dev
 bower install
 ```
 

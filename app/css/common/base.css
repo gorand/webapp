@@ -58,11 +58,6 @@ body{
 }
 
 .part-content{
-		@extend %part-content;
-		padding: 8px 0 18px;
-	.info-inner{
-		padding: 24px;
-	}
 	.list-content{
 		.list-wrap{
 			margin-left: 272px;

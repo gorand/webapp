@@ -9353,8 +9353,7 @@ button.close {
  * Base project style
  =================================================*/
 /* main layout */
-.part--content,
-.part-content {
+.part--content {
 	background-color: #F1F3F7;
 	border: 1px solid #F1F3F7;	
 	border-radius: 3px;
@@ -9407,14 +9406,6 @@ body{
   color: #333;
   font: normal 34px/58px "Roboto-Regular",Arial,Verdana,Helvetica,sans-serif;
   border-bottom: solid 2px #444;
-}
-
-.part-content{
-		padding: 8px 0 18px;
-}
-
-.part-content .info-inner{
-  padding: 24px;
 }
 
 .part-content .list-content .list-wrap{

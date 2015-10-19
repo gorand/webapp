@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync').create(),
  	mainBowerFiles = require('main-bower-files'),
 	rename = require("gulp-rename"),
+	plumber = require('gulp-plumber'),	
 	notify = require('gulp-notify');
 
 // runing a webserver
@@ -33,6 +34,7 @@ gulp.task('postcss',  function() {
 			colorFunction
 		];
     return gulp.src(['app/css/main.css'])
+    	.pipe(plumber())
 		.pipe(postcss(processors))
 		.pipe(notify('CSS-файлы успешно обновлены'))
 		.pipe(rename('style.css'))

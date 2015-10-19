@@ -6,7 +6,6 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync').create(),
  	mainBowerFiles = require('main-bower-files'),
 	rename = require("gulp-rename"),
- 	iconfont = require('gulp-iconfont'),
 	notify = require('gulp-notify');
 
 // runing a webserver

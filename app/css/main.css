@@ -2,42 +2,42 @@
 /** 
  * Include of external style
  =================================================*/
-@import "vendor/normalize";
-@import "vendor/bootstrap";
+@import "vendor/normalize.css";
+@import "vendor/bootstrap.css";
 
 /* icon font  */
-@import "vendor/font-awesome";
+@import "vendor/font-awesome.css";
 
 /* typography font */
-@import "vendor/roboto-fontface";
+@import "vendor/roboto-fontface.css";
 
 
 /** 
  * Variables and mixins for project
  =================================================*/
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/helpers";
-@import "helpers/proportions";
+@import "helpers/variables.css";
+@import "helpers/mixins.css";
+@import "helpers/helpers.css";
+@import "helpers/proportions.css";
 
 
 /** 
  * Base project style
  =================================================*/
-@import "common/base";
-@import "common/fonts";
-@import "common/links";
-@import "common/typography";
-@import "common/icons";
-@import "common/symbols";
+@import "common/base.css";
+@import "common/fonts.css";
+@import "common/links.css";
+@import "common/typography.css";
+@import "common/icons.css";
+@import "common/symbols.css";
 
 /* specific project styles */
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/sidebar";
-@import "layouts/modal";
+@import "layouts/header.css";
+@import "layouts/footer.css";
+@import "layouts/sidebar.css";
+@import "layouts/modal.css";
 
 /* components */
-@import "components/buttons";
-@import "components/navigation";
-@import "components/lists";
+@import "components/buttons.css";
+@import "components/navigation.css";
+@import "components/lists.css";

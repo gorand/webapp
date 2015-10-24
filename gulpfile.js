@@ -41,6 +41,12 @@ gulp.task('postcss',  function() {
 		.pipe(gulp.dest('dist/css/'));
 });
 
+// javascript
+gulp.task('js', function(){
+	gulp.src("app/js/main.js")
+	.pipe(gulp.dest("dist/js/"))
+});
+
 // main bower files
 gulp.task('fontsMainBower', function() {
 	return gulp.src(mainBowerFiles(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.otf']))
@@ -80,17 +86,6 @@ gulp.task('watch', function() {
    gulp.watch(['app/css/*.css', 'app/css/**/*.css', 'app/templates/*.jade', 'app/templates/**/*.jade'], ['postcss', 'template']).on("change", browserSync.reload);
 });
 
-// other auxiliary tasks
-gulp.task('image', function() {
- gulp.src('dist/img/*')
-   .pipe(gulp.dest('raw/images'))
-   .pipe(imagemin({
-   		progressive: true,
-   		use: [pngquant()]
-   }))
-   .pipe(gulp.dest('dist/img'));
-});
-
 gulp.task('convert', function(){
 	gulp.src('raw/builder/html/*.html')
 		.pipe(html2jade())
@@ -120,9 +115,8 @@ gulp.task('tofonts2', function(){
 	.pipe(gulp.dest("dist/fonts/roboto-fontface"))
 });
 
-
 // default task
-gulp.task('default', ['browser-sync', 'postcss', 'template', 'watch']);
+gulp.task('default', ['browser-sync', 'postcss', 'template', 'js', 'watch']);
 
 // other tasks
 gulp.task('update', [ 'mainBower', 'postcss', 'template', 'fonts']);
